@@ -1,0 +1,168 @@
+@font-face {
+    font-family: ryan;
+    src: url('../fonts/ryan.ttf');
+}
+
+html{
+	transition:background 1s ease-out;
+	overflow:hidden !important;
+}
+
+#content{
+	color: #ddd;
+	margin-top:355px;
+	margin-left:5%;
+	position:relative;
+	font-family: ryan; 
+	font-size:70px; 
+	font-weight:600 
+}
+.char{
+	display: none;
+	width:80px;
+	height:110px;
+	/*display: block; */
+	float:left;
+	transition: all 5s ease-in;
+	position: relative;
+	/*opacity: 0;*/
+	/*Remember to restore position to relative and float to left.*/
+}
+
+/*
+.char1{
+	transition: all 0.7s ease-in 0s;
+}
+
+.char2{
+	transition: all 0.7s ease-in 0.2s;
+}
+
+.char3{
+	transition: all 0.7s ease-in 0.4s;
+}
+
+.char4{
+	transition: all 0.7s ease-in 0.6s;
+}
+
+.char5{
+	transition: all 0.7s ease-in 0.8s;
+}
+
+.char6{
+	transition: all 0.7s ease-in 1s;
+}
+
+.char7{
+	transition: all 0.7s ease-in 1.2s;
+}
+
+.char8{
+	transition: all 0.7s ease-in 1.4s;
+}
+
+.char9{
+	transition: all 0.7s ease-in 1.6s;
+}
+
+.char1{
+	transition: all 0.7s ease-in 1.8s;
+}
+
+.char10{
+	transition: all 0.7s ease-in 2s;
+}
+
+.char11{
+	transition: all 0.7s ease-in 2.2s;
+}
+
+.char12{
+	transition: all 0.7s ease-in 2.3s;
+}
+
+.char13{
+	transition: all 0.7s ease-in 2.4s;
+}
+
+.char14{
+	transition: all 0.7s ease-in 2.5s;
+}
+
+.char15{
+	transition: all 0.7s ease-in 2.6s;
+}
+*/
+
+.char-letter{
+	z-index:2;
+	position:absolute;
+}
+
+.char-image{
+	position:absolute;
+	height:100%;
+	width:100%;
+	z-index:3;
+	transition:all 0.7s ease-in;
+}
+
+
+.os-loader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 55555;
+	height: 100%;
+	width: 100%;
+	overflow: hidden !important;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #ddd;
+	background: #000;	
+}
+
+#skip-anim{
+	position:absolute; 
+	right:15px; 
+	bottom:15px; 
+	color:#FFF; 
+	border:1px solid white; 
+	border-radius:4px; 
+	padding: 5px 15px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#skip-anim:hover{
+	text-decoration: underline;
+	cursor:pointer; 
+	
+}
+
+#enter-site-btn :hover{
+	cursor:pointer; 
+	text-decoration:underline;
+}
+
+.audio-menu-item{
+	font-size: 30px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+#song-name{
+	font-size: 20px;
+	/*font-family: Verdana;*/
+}
+
+#audio-control-menu{
+	/*transform: rotate(-90deg);
+	transform-origin: top left;*/
+	font-size: 10px;
+	position:fixed;
+	bottom:0px;
+	right:20px;
+}

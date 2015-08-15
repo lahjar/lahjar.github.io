@@ -1,0 +1,128 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/component.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.lettering.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/script.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+		
+	</head>
+	<body style="width:100%; height:100%; min-width:1300px;">
+
+		<div class="os-loader">
+			<div id="skip-anim" onclick="skip_anim();">SKIP THIS</div>
+			<audio id="intro-music" src="audio/intro.mp3" width="180" height="90" loop="false" autoplay hidden="true" ></audio>
+			<div class="os-phrases" id="os-phrases">
+				<h2>Sometimes it's better</h2>
+				<h2>to hide</h2>
+				<h2>in order to</h2>
+				<h2>survive evil</h2>
+				<h2>This fall</h2>
+				<h2>Prepare</h2>
+				<h2>Refresh to replay</h2>
+				<h2 id="enter-site-btn" onclick="enter_site();" >Enter the Site</h2>
+			</div>
+		</div>
+
+		<div id="content" style="display:none;">
+			
+			
+			<div class="char char1" style="transform: translateX(-3px) translateY(-146px) rotate(25deg);"> 
+				<span class="char-letter" style="">H</span>
+				<img class="char-image" src="images/1.jpg">
+			</div>
+
+			<div class="char char2" style="transform: translateX(-7px) translateY(-104px) rotate(21deg);">
+				<span class="char-letter" style="">A</span>
+				<img class="char-image" src="images/2.jpg">
+			</div>
+
+			<div class="char char3" style="transform: translateX(-10px) translateY(-71px) rotate(17deg);">
+				<span class="char-letter" style="">P</span>
+				<img class="char-image" src="images/3.jpg">
+			</div>
+
+			<div class="char char4" style="transform: translateX(-10px) translateY(-45px) rotate(14deg);">
+				<span class="char-letter" style="">P</span>
+				<img class="char-image" src="images/4.jpg">
+			</div>
+
+			<div class="char char5" style="transform: translateX(-8px) translateY(-25px) rotate(10deg);">
+				<span class="char-letter" style="">Y</span>
+				<img class="char-image" src="images/5.jpg">
+			</div>
+
+			<div class="char char6 empty" style="transform: translateX(-6px) translateY(-11px) rotate(7deg);">&nbsp;
+			</div>
+
+			<div class="char char7" style="transform: translateX(-3px) translateY(-4px) rotate(3deg);">
+				<span class="char-letter" style="">B</span>
+				<img class="char-image" src="images/6.jpg">
+			</div>
+
+			<div class="char char8" style="transform: translateX(0px) translateY(0px) rotate(0deg);">
+				<span class="char-letter" style="">I</span>
+				<img class="char-image" src="images/7.jpg">
+			</div>
+
+			<div class="char char9" style="transform: translateX(2px) translateY(-2px) rotate(-2deg);">
+				<span class="char-letter" style="">R</span>
+				<img class="char-image" src="images/8.jpg">
+			</div>
+
+			<div class="char char10" style="transform: translateX(6px) translateY(-11px) rotate(-6deg);">
+				<span class="char-letter" style="">T</span>
+				<img class="char-image" src="images/9.jpg">
+			</div>
+
+			<div class="char char11" style="transform: translateX(8px) translateY(-26px) rotate(-10deg);">
+				<span class="char-letter" style="">H</span>
+				<img class="char-image" src="images/10.jpg">
+			</div>
+
+			<div class="char char12" style="transform: translateX(10px) translateY(-50px) rotate(-14deg);">
+				<span class="char-letter" style="">D</span>
+				<img class="char-image" src="images/11.jpg">
+			</div>
+
+			<div class="char char13" style="transform: translateX(9px) translateY(-80px) rotate(-18deg);">
+				<span class="char-letter" style="">A</span>
+				<img class="char-image" src="images/12.jpg">
+			</div>
+
+			<div class="char char14" style="transform: translateX(6px) translateY(-115px) rotate(-22deg);">
+				<span class="char-letter" style="">Y</span>
+				<img class="char-image" src="images/13.jpg">
+			</div>
+
+			<div class="char char15" style="transform: translateX(2px) translateY(-151px) rotate(-25deg);">
+				<span class="char-letter" style="">!</span>
+				<img class="char-image" src="images/14.jpg">
+			</div>
+			<div style="position:fixed;">
+				<audio id="bday-audio" preload="auto" tabindex="0" type="audio/mpeg">
+				    <source type="audio/mp3" src="http://www.archive.org/download/bolero_69/Bolero.mp3">
+				    Sorry, your browser does not support HTML5 audio.
+				</audio>
+				<ul id="playlist" style="display:none;">
+				    <li class="active"><a href="audio/1.mp3" title="New World">1</a></li>
+				    <li><a href="audio/2.mp3" title="Moonlight Sonata">2</a></li>
+				    <li><a href="audio/3.mp3" title="Velcro">3</a></li>
+				    <li><a href="audio/4.mp3" title="Neo">4</a></li>
+				    <li><a href="audio/5.mp3" title="Hotel California">5</a></li>
+				    <li><a href="audio/6.mp3" title="Van Halen Panama">6</a></li>
+
+				</ul>
+				<div id="audio-control-menu">
+					<i class="material-icons audio-menu-item" id="play_audio" style="font-size:30px;display:none;">play_circle_outline</i>
+					<i class="material-icons audio-menu-item" id="pause_audio" style="font-size:30px;">pause_circle_outline</i>
+					<i class="material-icons audio-menu-item" id="next_audio" style="font-size:30px;">skip_next</i>
+					<span id="song-name"></span>
+				</div>
+			</div>
+	</div>
+	
+</body></html>
