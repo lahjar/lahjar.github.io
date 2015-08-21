@@ -6,13 +6,14 @@
 		<script src="js/jquery.lettering.js"></script>
 		<script src="js/modernizr.custom.js"></script>
 		<script src="js/script.js"></script>
+		<script src="js/bgvid.js"></script>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-
+		
 	</head>
 	<body style="width:100%; height:100%; min-width:1300px;">
 
-		<div class="os-loader">
+		<!-- <div class="os-loader">
 			<div id="skip-anim" onclick="skip_anim();">SKIP THIS</div>
 			<audio id="intro-music" src="audio/intro.mp3" width="180" height="90" loop="false" autoplay hidden="true" ></audio>
 			<div class="os-phrases" id="os-phrases">
@@ -25,12 +26,31 @@
 				<h2>Refresh to replay</h2>
 				<h2 id="enter-site-btn" onclick="enter_site();" >Enter the Site</h2>
 			</div>
+		</div> -->
+		<div id="bgvid-div">
+			<video autoplay  poster="video-posters/1.jpg" id="bgvid" controls>
+				<source src="videos/1.mp4" type="video/mp4">
+			</video>
+			<div id="progressbar">
+			        <div id="loadingprogress"></div>
+			        <div id="butterfly"></div>
+			</div>
+			<div id="status-bgvid">Pause</div>
+			<div id="skip-bgvid" onclick="enter_site();">Skip</div>
+			<!-- <div id="polina">
+				<h1>Polina</h1>
+				<p>filmed by Alexander Wagner 2011
+				<p><a href="http://demosthenes.info/blog/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
+				<p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
+				<button>Pause</button>
+			</div> -->
 		</div>
 
 		<div id="content" style="display:none;">
-
-
-			<div class="char char1" style="transform: translateX(-3px) translateY(-146px) rotate(25deg);">
+			
+			
+			<div class="char char1" style="transform: translateX(-3px) translateY(-146px) rotate(25deg);"> 
 				<span class="char-letter" style="">H</span>
 				<img class="char-image" src="images/1.jpg">
 			</div>
@@ -103,13 +123,13 @@
 				<img class="char-image" src="images/14.jpg">
 			</div>
 			<div style="position:fixed;">
-				<audio id="bday-audio" preload="auto" tabindex="0" type="audio/mpeg">
-				    <source type="audio/mp3" src="http://www.archive.org/download/bolero_69/Bolero.mp3">
-				    Sorry, your browser does not support HTML5 audio.
+				<audio id="bday-audio" preload="auto" tabindex="0" type="audio/mpeg" onended="track_ended();">
+				    <source type="audio/mp3" src="audio/1.mp3">
+				    <!-- Sorry, your browser does not support HTML5 audio. -->
 				</audio>
 				<ul id="playlist" style="display:none;">
 				    <li class="active"><a href="audio/1.mp3" title="New World">1</a></li>
-				    <li><a href="audio/2.mp3" title="Lean ON">2</a></li>
+				    <li><a href="audio/2.mp3" title="Moonlight Sonata">2</a></li>
 				    <li><a href="audio/3.mp3" title="Velcro">3</a></li>
 				    <li><a href="audio/4.mp3" title="Neo">4</a></li>
 				    <li><a href="audio/5.mp3" title="Hotel California">5</a></li>
@@ -124,5 +144,5 @@
 				</div>
 			</div>
 	</div>
-
+	
 </body></html>
