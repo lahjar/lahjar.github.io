@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-		openingSequence();
+		// openingSequence();
 		onHoverRotate();
 		// openingSequencePlayer();
 		allImagesHovered = 0;
