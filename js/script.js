@@ -162,6 +162,9 @@ function enter_site(){
 
 	$("#intro-music").trigger('pause');
 	$("#bgvid-div").css({"display":"none"});
+	var video = $('#bgvid');
+	video[0].pause();
+	$("#bgvid-div").empty();
 	playlistPlayer();
 	jQuery(".char2").delay(2000).fadeIn("fast");
 	jQuery(".char3").delay(2020).fadeIn("fast");
