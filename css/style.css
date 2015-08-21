@@ -234,6 +234,7 @@ html{
     height: 100%;
     z-index: 0;
     transform: translateX(-50%) translateY(-50%);
+    background: rgb(29, 36, 43);
 }
 
 #youtube-vid{
@@ -251,14 +252,15 @@ html{
 #bgvid { 
     position: absolute;
     top:0;
-    left:0;
-    min-width: 100%;
+    left: 25%;
+    /*min-width: 100%;*/
     min-height: 100%;
-    width: auto;
+    /*width: auto;*/
     height: auto;
  	background: url('http://demosthenes.info/assets/images/polina.jpg') no-repeat;
   	background-size: cover;
   	transition: 1s opacity;
+
 }
 .stopfade { 
    opacity: .5;

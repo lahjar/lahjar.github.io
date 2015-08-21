@@ -72,14 +72,6 @@ function run(link, player){
 
 
 
-function openingSequencePlayer(){
-	var aud = document.getElementById("intro-music");
-	aud.volume = 0.5;
-}
-
-function openingSequence(){
-	$("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering(); 
-}
 
 
 function onHoverRotate(){
@@ -169,6 +161,7 @@ function enter_site(){
 	jQuery(".char1").fadeIn("fast");
 
 	$("#intro-music").trigger('pause');
+	$("#bgvid-div").css({"display":"none"});
 	playlistPlayer();
 	jQuery(".char2").delay(2000).fadeIn("fast");
 	jQuery(".char3").delay(2020).fadeIn("fast");
