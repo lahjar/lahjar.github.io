@@ -6,7 +6,9 @@
 html{
 	transition:background 1s ease-out;
 	overflow:hidden !important;
+	height:100%;
 }
+
 
 #content{
 	color: #ddd;
@@ -149,7 +151,7 @@ html{
 	position:absolute; 
 	right:20px; 
 	top:15px; 
-	color:#fff; 
+	color:#aaa; 
 	/*border:1px solid white; */
 	/*border-radius:4px; */
 	/*padding: 5px 15px;*/
@@ -176,7 +178,7 @@ html{
 	position:absolute; 
 	right:65px; 
 	top:15px; 
-	color:#fff; 
+	color:#aaa; 
 	/*border:1px solid white; 
 	border-radius:4px; 
 	padding: 5px 15px;*/
@@ -228,13 +230,23 @@ html{
     top: 50%;
     left: 50%;
     min-width: 100%;
-    min-height: 100%;
     width: auto;
-    height: auto;
+    height: 100%;
     z-index: 0;
     transform: translateX(-50%) translateY(-50%);
 }
 
+#youtube-vid{
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);	
+}
 
 #bgvid { 
     position: absolute;

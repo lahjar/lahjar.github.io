@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" href="css/component.css">
@@ -16,7 +17,7 @@
 		
 		<div id="bgvid-div">
 			<video autoplay  poster="video-posters/1.jpg" id="bgvid" controls>
-				<source src="videos/1.mp4" type="video/mp4">
+				<source src="videos/1.mp4" type="video/mp4" codecs="H.264, avc1.42E01E, mp4a.40.2">
 			</video>
 			<div id="progressbar">
 			        <div id="loadingprogress"></div>
@@ -24,15 +25,15 @@
 			</div>
 			<div id="status-bgvid">Pause</div>
 			<div id="skip-bgvid" onclick="enter_site();">Skip</div>
-			<!-- <div id="polina">
-				<h1>Polina</h1>
-				<p>filmed by Alexander Wagner 2011
-				<p><a href="http://demosthenes.info/blog/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
-				<p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
-				<button>Pause</button>
-			</div> -->
+			
 		</div>
+
+		<!-- <div id="youtube-vid">
+			<iframe id="ytplayer" type="text/html" width="100%" height="650"
+			  src="https://www.youtube.com/embed/5vhdu0anY0I?autoplay=1&autohide=1&autoplay=1&modestbranding=1&origin=http://example.com"
+			  frameborder="0"/>
+			  <iframe width="420" height="315" src="https://www.youtube.com/embed/5vhdu0anY0I" frameborder="0" allowfullscreen></iframe>
+		</div> -->
 
 		<div id="content" style="display:none;">
 			
@@ -115,13 +116,13 @@
 				    <!-- Sorry, your browser does not support HTML5 audio. -->
 				</audio>
 				<ul id="playlist" style="display:none;">
-				    <li class="active"><a href="audio/1.mp3" title="New World">1</a></li>
-				    <li><a href="audio/2.mp3" title="Moonlight Sonata">2</a></li>
-				    <li><a href="audio/3.mp3" title="Velcro">3</a></li>
+				    <li class="active"><a href="audio/1.mp3" title="Hotel California">1</a></li>
+				    <li><a href="audio/2.mp3" title="Do I wanna know">2</a></li>
+				    <!-- <li><a href="audio/3.mp3" title="Velcro">3</a></li>
 				    <li><a href="audio/4.mp3" title="Neo">4</a></li>
 				    <li><a href="audio/5.mp3" title="Hotel California">5</a></li>
 				    <li><a href="audio/6.mp3" title="Van Halen Panama">6</a></li>
-
+ -->
 				</ul>
 				<div id="audio-control-menu">
 					<i class="material-icons audio-menu-item" id="play_audio" style="font-size:30px;display:none;">play_circle_outline</i>
