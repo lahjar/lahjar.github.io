@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+
+.btn {
+	@apply inline-block px-5 py-3 rounded text-sm uppercase tracking-wider font-semibold cursor-pointer;
+}
+
+.btn:focus {
+	@apply outline-none shadow-outline;
+}
+
+.btn-indigo {
+	@apply bg-indigo-500 text-white;
+}
+
+.btn-orange {
+	@apply bg-orange-500 text-white;
+}
+
+.btn:hover {
+	@apply bg-indigo-100;
+}
+
+.btn:active {
+	@apply bg-green-600;
+	@apply bg-indigo-200;
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+	width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px rgba(128, 128, 128, 0);
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 128, 0, 0.445);
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 128, 0, 0.645);
+}
+
+@tailwind utilities;
